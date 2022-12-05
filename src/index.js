@@ -83,3 +83,11 @@ bottomContent.children[1].children[0].textContent = siteContent['main-content'][
 bottomContent.children[1].children[1].textContent = siteContent['main-content']['product-content'];
 bottomContent.children[2].children[0].textContent = siteContent['main-content']['vision-h4'];
 bottomContent.children[2].children[1].textContent = siteContent['main-content']['vision-content'];
+
+
+// CONTACT
+const contact = document.querySelector('.contact');
+contact.querySelector('h4').textContent = siteContent.contact['contact-h4'];
+contact.querySelector('p:nth-of-type(1)').textContent = siteContent.contact['address'];
+contact.querySelector('p:nth-of-type(2)').textContent = siteContent.contact['phone'];
+contact.querySelector('p:nth-of-type(3)').textContent = siteContent.contact['email'];
