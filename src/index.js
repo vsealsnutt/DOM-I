@@ -58,4 +58,9 @@ const navText = Object.values(siteContent.nav);
 navLinks.forEach((link, i) => {
   link.textContent = navText[i];
   link.classList.add('italic');
-})
+});
+
+
+// CTA
+document.querySelector('.cta h1').textContent = siteContent.cta.h1;
+document.querySelector('.cta button').textContent = siteContent.cta.button;
