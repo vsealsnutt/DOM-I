@@ -50,3 +50,12 @@ ctaImg.src = siteContent.images['cta-img'];
 
 const middleImg = document.querySelector('#middle-img');
 middleImg.src = siteContent.images['accent-img'];
+
+
+// NAV
+const navLinks = document.querySelectorAll('header nav a');
+const navText = Object.values(siteContent.nav);
+navLinks.forEach((link, i) => {
+  link.textContent = navText[i];
+  link.classList.add('italic');
+})
